@@ -21,9 +21,11 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'meta_request'
+  gem 'irbtools-more', require: 'irbtools/binding'
 end
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0.alpha6'
+
+gem 'bootstrap', '~> 4.0.0beta'
 gem 'devise'
 gem 'high_voltage'
 gem 'jquery-rails'
@@ -42,4 +44,16 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'launchy'
+end
+
+gem 'binding_of_caller'
+gem 'simple_discussion', github: 'excid3/simple_discussion'
+gem 'sidekiq'
+
+group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rbenv',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
 end

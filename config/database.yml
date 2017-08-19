@@ -56,6 +56,6 @@ production:
   encoding: unicode
   database: forum_production
   pool:     5
-  username: forum2
-  password: forum
+  username: gary
+  password:
   template: template0

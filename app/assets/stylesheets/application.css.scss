@@ -10,6 +10,63 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap";
+@import "font-path-overwrite";
+@import "font-awesome/scss/font-awesome";
+@import "simple_discussion";
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+//.container {
+//  margin-right: auto;
+//  margin-left: auto;
+//  padding-left: 15px;
+//  padding-right: 15px;
+//}
+//
+//.forum-thread p {
+//  font-size: 13px;
+//  margin-top: 6px;
+//  margin-bottom: 0;
+//}
+
+//hr {
+//  border: 0;
+//  border-top: 1px solid #eee;
+//  margin: 24px -20px;
+//}
+//
+//.forum-thread-filters a {
+//  color: #555555;
+//  display: block;
+//}
+//
+//.forum-thread-filters a:hover {
+//  color: #222222;
+//  font-weight: bold;
+//  text-decoration: none
+//}
+//
+//body {
+//  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  text-rendering: optimizelegibility;
+//  background: #fafafa;
+//}
